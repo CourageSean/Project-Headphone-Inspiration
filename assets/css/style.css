@@ -1,0 +1,608 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;400;500;600;700&display=swap");
+
+body {
+  font-family: "Work Sans", "sans-serif";
+  margin: 0;
+}
+
+:root {
+  --dunkel-grau: #2e2e2e;
+  --helles-grau: #867772;
+  --noch-helles-grau: rgb(115, 115, 115);
+  --rosa-panther: #ebccc2;
+}
+
+.p2 {
+  color: var(--dunkel-grau);
+}
+
+#about-1,
+#inspiration-1,
+#inspiration-2,
+#middle-article {
+  background-color: var(--dunkel-grau);
+}
+
+#logo {
+  padding-left: 5%;
+  top: 40px;
+  position: fixed;
+}
+
+ul:nth-of-type(1) {
+  display: inline-block;
+  width: 70%;
+  text-align: right;
+  list-style: none;
+  padding-left: 26%;
+  margin-top: 0;
+  position: fixed;
+}
+
+ul:nth-of-type(1) li {
+  display: inline-block;
+  padding: 10px 15px;
+}
+
+ul:nth-of-type(1) li a {
+  color: var(--noch-helles-grau);
+  text-decoration: none;
+  transition: 1.5s;
+}
+
+ul:nth-of-type(1) li a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+ul:nth-of-type(1) li:nth-of-type(1),
+ul:nth-of-type(1) li:nth-of-type(4) {
+  padding-right: 5%;
+}
+
+ul:nth-of-type(2) {
+  position: fixed;
+  padding-top: 170px;
+  list-style: none;
+  line-height: 90px;
+  padding-left: 5%;
+}
+
+ul:nth-of-type(2) li {
+  position: relative;
+}
+
+#about-1 h1:nth-of-type(1) {
+  width: 25%;
+  margin: auto;
+  padding-top: 150px;
+  padding-right: 5%;
+  color: var(--rosa-panther);
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 40px;
+}
+
+#about-1 h1:nth-of-type(2) {
+  width: 25%;
+  margin: auto;
+  padding-right: 5%;
+  padding-bottom: 100px;
+  color: var(--rosa-panther);
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 50px;
+}
+
+#about-1 img:nth-of-type(2) {
+  display: block;
+  width: 90%;
+  margin: auto;
+}
+/*=================== Nav- Circles =====================*/
+ul:nth-of-type(2) li a {
+  text-decoration: none;
+  color: #fff;
+  opacity: 0.5;
+  font-weight: 400;
+  transition: 1.5s;
+}
+
+ul:nth-of-type(2) li a:hover {
+  opacity: 1;
+}
+
+ul:nth-of-type(2) li a:hover + .inner-circle {
+  opacity: 0.5;
+}
+
+.inner-circle {
+  display: inline-block;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border: solid 2px;
+  border-radius: 100%;
+  left: -48%;
+  top: 28px;
+  color: #fff;
+  opacity: 0.2;
+  transition: 1.5s;
+}
+
+.outer-circle {
+  display: inline-block;
+  position: absolute;
+  color: #fff;
+  width: 25px;
+  height: 25px;
+  border: solid 2px;
+  border-radius: 100%;
+  left: -53%;
+  top: 23px;
+  margin-top: 0px;
+  opacity: 0;
+}
+
+.nav-line {
+  display: inline-block;
+  position: absolute;
+  width: 2px;
+  height: 50px;
+  background-color: #fff;
+  left: -40%;
+  top: 54px;
+  opacity: 0.1;
+}
+
+/*============== About - Section 2 ====================*/
+/*============== Inspiration- Section 2 ====================*/
+/*============== Lounger -Section ====================*/
+/*============== Experience -Section ====================*/
+#about-2 {
+  background-color: var(--dunkel-grau);
+  padding-bottom: 150px;
+}
+#about-2 article {
+  display: flex;
+  padding-top: 100px;
+  justify-content: center;
+
+  margin: auto;
+}
+
+#about-2 article img {
+  width: 25%;
+  padding-right: 6%;
+}
+
+#about-2 article div {
+  width: 27%;
+  padding-top: 30px;
+  padding-right: 6%;
+}
+
+#about-2 article div h2,
+#inspiration-2 article div h2,
+#middle-article h2,
+#lounger-article div h2,
+#experience-article div h2,
+#shop-article div div h2 {
+  color: var(--rosa-panther);
+  font-weight: 400;
+  font-size: 2rem;
+  margin-top: 0;
+}
+
+#about-2 article div p,
+#inspiration-2 article div p,
+#middle-article p:nth-of-type(1),
+#lounger-article div p,
+#experience-article div p,
+#shop-article div div p {
+  color: var(--noch-helles-grau);
+  line-height: 25px;
+}
+/*==================== Inspiration - Section 1 =======================*/
+
+#inspiration-1 video {
+  width: 60%;
+  display: block;
+  margin: auto;
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+
+#middle-article a {
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: var(--noch-helles-grau);
+  border: #fff solid 1px;
+  border-radius: 3px;
+  padding: 5px 8px;
+}
+
+/*============== Inspiration- Section 2 ====================*/
+
+#middle-article {
+  width: 55%;
+  margin: auto;
+  padding-bottom: 90px;
+}
+
+#inspiration-2 article {
+  display: flex;
+  width: 55%;
+  margin: auto;
+  justify-content: space-between;
+}
+
+#inspiration-2 article img {
+  width: 50%;
+}
+
+#inspiration-2 article div {
+  width: 45%;
+  padding-top: 70px;
+}
+
+#inspiration-2 article div:nth-of-type(1) {
+  padding-right: 2%;
+}
+#inspiration-2 article div h3,
+#middle-article h3 {
+  color: var(--rosa-panther);
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+#inspiration-2 {
+  padding-bottom: 100px;
+}
+
+/*============== Lounger Section ====================*/
+/*============== Experience Section ====================*/
+/*============== Shop Section ====================*/
+#lounger-section,
+#experience-section,
+#shop-section {
+  height: 100vh;
+}
+
+#lounger-article,
+#experience-article,
+#shop-article {
+  display: flex;
+  height: 100vh;
+}
+
+#lounger-article img,
+#experience-article img,
+#shop-article #img1 {
+  width: 55%;
+}
+#lounger-article div,
+#experience-article div {
+  display: flex;
+  width: 45%;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--dunkel-grau);
+  padding-left: 3%;
+}
+
+#lounger-article div p,
+#experience-article div p {
+  width: 70%;
+}
+
+#lounger-article div h2,
+#experience-article div h2 {
+  padding-bottom: 50px;
+}
+
+/*============== Shop Section ====================*/
+
+#shop-article div {
+  width: 45%;
+  background-color: var(--dunkel-grau);
+}
+
+#shop-article div img {
+  padding-left: 10%;
+  margin-top: 50px;
+}
+
+#shop-article div div {
+  width: 100%;
+  text-align: center;
+}
+
+#shop-article div div a {
+  color: #000;
+  text-decoration: none;
+  padding: 10px 25px;
+  background-color: var(--rosa-panther);
+  border-radius: 3px;
+}
+
+/*====================== Menu Burger =================*/
+#menu-section {
+  width: 10px;
+  height: 50px;
+  position: absolute;
+  top: 15%;
+  right: 10%;
+  display: none;
+}
+
+.burger-line {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+}
+
+#close {
+  display: none;
+}
+
+/*================== Media Qeries ====================*/
+
+@media (max-width: 1180px) {
+  ul:nth-of-type(2) {
+    position: fixed;
+    padding-top: 170px;
+    list-style: none;
+    line-height: 90px;
+    padding-left: 10%;
+  }
+
+  #about-2 article {
+    width: 90vw;
+  }
+
+  #about-2 article {
+    display: flex;
+    padding-top: 100px;
+    justify-content: center;
+
+    margin: auto;
+  }
+
+  #about-2 article img {
+    width: 40%;
+    padding-right: 6%;
+  }
+
+  #about-2 article div {
+    width: 40%;
+    padding-top: 30px;
+    padding-right: 6%;
+  }
+  #shop-section {
+    overflow: hidden;
+  }
+}
+/*============media Query (max 850px) ===============*/
+
+@media (max-width: 850px) {
+  #inspiration-2 article {
+    display: flex;
+    width: 75%;
+    margin: auto;
+    justify-content: space-between;
+  }
+
+  #inspiration-2 article img {
+    width: 50%;
+  }
+
+  #inspiration-2 article div {
+    width: 45%;
+    padding-top: 70px;
+  }
+
+  #lounger-article img,
+  #experience-article img,
+  #shop-article #img1 {
+    width: 45%;
+  }
+  #lounger-article div,
+  #experience-article div {
+    width: 55%;
+  }
+
+  #lounger-article div p,
+  #experience-article div p {
+    width: 90%;
+  }
+
+  #shop-section {
+    overflow: hidden;
+  }
+  /*============media Query (max 700px) ===============*/
+
+  @media (max-width: 700px) {
+    ul:nth-of-type(2) {
+      position: fixed;
+      padding-top: 170px;
+      list-style: none;
+      line-height: 90px;
+      padding-left: 10%;
+    }
+    #about-2 article {
+      display: block;
+      padding-top: 100px;
+
+      margin: auto;
+    }
+
+    #about-2 article img {
+      width: 70%;
+      display: block;
+      margin: auto;
+    }
+
+    #about-2 article div {
+      width: 60%;
+      padding-top: 30px;
+      padding-right: 6%;
+      margin: auto;
+    }
+  }
+}
+
+/*============media Query (max 600px) ===============*/
+
+@media (max-width: 600px) {
+  ul:nth-of-type(2) {
+    position: fixed;
+    padding-top: 170px;
+    list-style: none;
+    line-height: 90px;
+    padding-left: 15%;
+  }
+  #middle-article {
+    text-align: center;
+  }
+
+  #inspiration-2 article {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  #inspiration-2 article img {
+    width: 45%;
+    height: 30%;
+    margin: auto;
+  }
+
+  #inspiration-2 article div {
+    width: 90%;
+    padding-top: 10px;
+  }
+
+  #inspiration-2 article:nth-of-type(2) div {
+    order: 2;
+  }
+
+  #lounger-article,
+  #experience-article,
+  #shop-article {
+    display: block;
+  }
+
+  #lounger-article img,
+  #experience-article img,
+  #shop-article #img1 {
+    width: 100%;
+    height: 30vh;
+  }
+  #lounger-article div,
+  #experience-article div {
+    width: 100%;
+    display: block;
+    padding-top: 20px;
+
+    height: 75vh;
+    margin-top: -10px;
+  }
+  #lounger-article div h2,
+  #experience-article div h2 {
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  #lounger-article div p,
+  #experience-article div p {
+    width: 90%;
+    margin: auto;
+  }
+
+  #shop-article div {
+    margin-top: -10px;
+    width: 100%;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/*============media Query (max 450px) ===============*/
+
+@media (max-width: 450px) {
+  #about-1 img:nth-of-type(2) {
+    display: block;
+    width: 100%;
+    height: 70vh;
+    margin: auto;
+  }
+
+  #about-2 article {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+
+    margin: auto;
+  }
+
+  #about-2 article img {
+    width: 100%;
+    height: 200px;
+    display: block;
+  }
+
+  #about-2 article div {
+    width: 100%;
+
+    padding-top: 30px;
+
+    margin: auto;
+  }
+  #about-2 article div h2 {
+    text-align: center;
+  }
+
+  #shop-article div img,
+  #shop-article div h2,
+  #shop-article div p {
+    margin-top: -80px;
+  }
+
+  #shop-article div p {
+    margin-top: -30px;
+  }
+
+  #menu-section {
+    width: 10px;
+    height: 50px;
+    position: absolute;
+    top: 15%;
+    right: 10%;
+    display: inline-block;
+  }
+
+  #close {
+    display: inline-block;
+    width: 10px;
+    height: 50px;
+    position: absolute;
+    top: 15%;
+    right: 25%;
+    display: none;
+  }
+
+  ul:nth-of-type(2) {
+    position: absolute;
+    padding-top: 170px;
+    list-style: none;
+    line-height: 90px;
+    padding-left: 15%;
+    left: -200px;
+  }
+}
